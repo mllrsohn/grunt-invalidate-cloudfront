@@ -1,7 +1,7 @@
 {
   "name": "grunt-invalidate-cloudfront",
   "description": "Sends a invalidation request to amazon cloudfront",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/mllrsohn/grunt-invalidate-cloudfront",
   "author": {
     "name": "Steffen",
@@ -25,7 +25,6 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "prepublish": "rm -rf tasks && coffee --bare --output tasks/ src/",
     "test": "grunt test"
   },
   "devDependencies": {
