@@ -24,7 +24,7 @@ module.exports = function(grunt) {
       _results = [];
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         items = _ref[_i];
-        _results.push('/' + items.dest);
+        _results.push('/' + grunt.template.process(items.dest));
       }
       return _results;
     }).call(this);
