@@ -13,7 +13,7 @@ module.exports = (grunt) ->
 
         done = @async()
         cf = new AWS.CloudFront.Client(new AWS.Config({accessKeyId:options.key, secretAccessKey: options.secret, region:options.region}))
-        filelist = ('/' + items.dest for items in this.files)
+        filelist = ('/' + grunt.template.process(items.dest) for items in this.files)
         grunt.log.writeflags(filelist, 'Invalidating '+filelist.length+' files')
 
         # List Current Invalidations
