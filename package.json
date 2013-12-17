@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "grunt-invalidate-cloudfront",
   "description": "Sends a invalidation request to amazon cloudfront",
   "version": "0.1.2",
