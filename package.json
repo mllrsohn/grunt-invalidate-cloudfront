@@ -2,7 +2,7 @@
   "private": true,
   "name": "grunt-invalidate-cloudfront",
   "description": "Sends a invalidation request to amazon cloudfront",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/mllrsohn/grunt-invalidate-cloudfront",
   "author": {
     "name": "Steffen",
