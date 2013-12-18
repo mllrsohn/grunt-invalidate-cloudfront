@@ -10,8 +10,7 @@ module.exports = function(grunt) {
       key: '',
       secret: '',
       region: 'eu-west-1',
-      distribution: '',
-      debug: false
+      distribution: ''
     });
     done = this.async();
     cf = new AWS.CloudFront.Client(new AWS.Config({
@@ -60,7 +59,6 @@ module.exports = function(grunt) {
           }
         }
       };
-      if(options.debug) return;
       return cf.createInvalidation(params, function(err, data) {
         if (err) {
           grunt.fail.fatal(err);
