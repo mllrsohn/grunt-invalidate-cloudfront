@@ -34,7 +34,7 @@
     "grunt": "~0.4.2"
   },
   "dependencies": {
-    "aws-sdk": "~2.0.0-rc5."
+    "aws-sdk": "~2.0.0-rc5"
   },
   "peerDependencies": {
     "grunt": "~0.4.2"
