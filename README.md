@@ -19,7 +19,7 @@ grunt.loadNpmTasks('grunt-invalidate-cloudfront');
 
 ## The "invalidate_cloudfront" task
 
-### Exmaple
+### Example
 In your project's Gruntfile, add a section named `invalidate_cloudfront` to the data object passed into `grunt.initConfig()`.
 
 ```js
