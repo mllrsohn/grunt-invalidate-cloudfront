@@ -3,6 +3,9 @@ module.exports = (grunt) ->
     _ = grunt.util._
     AWS = require 'aws-sdk'
 
+    rfc3986EncodeURI = (str) ->
+      encodeURI(str).replace /[!'()*]/g, escape
+
     grunt.registerMultiTask "invalidate_cloudfront", "Invalidates Cloudfront files", ->
         options = @options(
             key: '',
@@ -47,9 +50,9 @@ module.exports = (grunt) ->
                     checkForCompletion()
                 else
                     done(true)
-                        
+
         cf = new AWS.CloudFront(new AWS.Config({accessKeyId:options.key, secretAccessKey: options.secret, region:options.region}))
-        filelist = ('/' + encodeURI(grunt.template.process(items.dest)) for items in this.files)
+        filelist = ('/' + rfc3986EncodeURI(grunt.template.process(items.dest)) for items in this.files)
         grunt.log.writeflags(filelist, 'Invalidating '+filelist.length+' files')
 
         # List Current Invalidations
