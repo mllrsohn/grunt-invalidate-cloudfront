@@ -10,8 +10,9 @@ module.exports = (grunt) ->
         options = @options(
             key: '',
             secret: '',
-            region: 'eu-west-1'
-            distribution: ''
+            region: 'eu-west-1',
+            distribution: '',
+            httpOptions: {}
         )
 
         done = @async()
@@ -51,7 +52,7 @@ module.exports = (grunt) ->
                 else
                     done(true)
 
-        cf = new AWS.CloudFront(new AWS.Config({accessKeyId:options.key, secretAccessKey: options.secret, region:options.region}))
+        cf = new AWS.CloudFront(new AWS.Config({accessKeyId:options.key, secretAccessKey: options.secret, region:options.region, httpOptions:options.httpOptions}))
         filelist = ('/' + rfc3986EncodeURI(grunt.template.process(items.dest)) for items in this.files)
         grunt.log.writeflags(filelist, 'Invalidating '+filelist.length+' files')
 
