@@ -8,8 +8,8 @@
     "email": "steffen@mllrsohn.com"
   },
   "repository": {
-    "type": "https",
-    "url": "https://github.com/jpges/grunt-invalidate-cloudfront.git"
+    "type": "git",
+    "url": "git://github.com/jpges/grunt-invalidate-cloudfront.git"
   },
   "bugs": {
     "url": "https://github.com/jpges/grunt-invalidate-cloudfront/issues"
