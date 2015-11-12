@@ -2,17 +2,17 @@
   "name": "grunt-invalidate-cloudfront",
   "description": "Sends a invalidation request to amazon cloudfront",
   "version": "0.1.6",
-  "homepage": "https://github.com/mllrsohn/grunt-invalidate-cloudfront",
+  "homepage": "https://github.com/jpges/grunt-invalidate-cloudfront",
   "author": {
     "name": "Steffen",
     "email": "steffen@mllrsohn.com"
   },
   "repository": {
-    "type": "git",
-    "url": "git://github.com/mllrsohn/grunt-invalidate-cloudfront.git"
+    "type": "https",
+    "url": "https://github.com/jpges/grunt-invalidate-cloudfront.git"
   },
   "bugs": {
-    "url": "https://github.com/mllrsohn/grunt-invalidate-cloudfront/issues"
+    "url": "https://github.com/jpges/grunt-invalidate-cloudfront/issues"
   },
   "licenses": [
     {
