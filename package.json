@@ -37,7 +37,7 @@
     "aws-sdk": "~2.0.0-rc5"
   },
   "peerDependencies": {
-    "grunt": "~0.4.2"
+    "grunt": ">=0.4.0"
   },
   "keywords": [
     "gruntplugin",
